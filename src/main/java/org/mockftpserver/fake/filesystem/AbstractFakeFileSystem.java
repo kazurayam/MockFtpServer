@@ -220,7 +220,9 @@ public abstract class AbstractFakeFileSystem implements FileSystem {
         while (iter.hasNext()) {
             String childPath = (String) iter.next();
             FileSystemEntry fileSystemEntry = getEntry(childPath);
-            entryList.add(fileSystemEntry);
+            if (fileSystemEntry != null) {
+                entryList.add(fileSystemEntry);
+            }
         }
         return entryList;
     }
@@ -249,7 +251,9 @@ public abstract class AbstractFakeFileSystem implements FileSystem {
         while (iter.hasNext()) {
             String childPath = (String) iter.next();
             FileSystemEntry fileSystemEntry = getEntry(childPath);
-            filenames.add(fileSystemEntry.getName());
+            if (fileSystemEntry != null) {
+                filenames.add(fileSystemEntry.getName());
+            }
         }
         return filenames;
     }

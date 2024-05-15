@@ -3,6 +3,7 @@
 TODO: Version 3.2.0 (??? 2023)
 ------------------------------------------
  - #21: FakeFtpServer: Add support for the SIZE command.([Edoardo Luppi](https://github.com/lppedd))
+ - #20: `AbstractFakeFileSystem`: Fix NullPointerException in `listFiles()` and `listNames()` if file was deleted or renamed.
 
 Infrastructure and Dependencies
  - Upgrade Spring Framework test dependency to 5.3.30.
