@@ -45,6 +45,13 @@ The **MockFtpServer** project requires:
    framework-specific jar) is optional.
 
 
+## Articles and References
+
+ * [Implementing a FTP-Client in Java | Baeldung](https://www.baeldung.com/java-ftp-client)
+
+ * [How to create a java FTP server mock](https://itsiastic.wordpress.com/2012/11/08/how-to-create-a-java-ftp-server-mock/)
+
+
 ## Maven Support
 
 For projects built using [Maven](http://maven.apache.org/), **MockFtpServer** is now available
