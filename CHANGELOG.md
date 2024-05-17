@@ -1,6 +1,6 @@
 # MockFtpServer Change Log
 
-TODO: Version 3.2.0 (??? 2023)
+Version 3.2.0 (May 2024)
 ------------------------------------------
  - #21: FakeFtpServer: Add support for the SIZE command.([Edoardo Luppi](https://github.com/lppedd))
  - #20: `AbstractFakeFileSystem`: Fix NullPointerException in `listFiles()` and `listNames()` if file was deleted or renamed.
@@ -10,6 +10,7 @@ Infrastructure and Dependencies
 
 Documentation
  - Update example FakeFtpServer and StubFtpServer tests in the online docs to use JUnit 5.
+ - Home page: Add links to articles re: MockFtpServer.
 
 
 Version 3.1.0 (Sep 2022)
