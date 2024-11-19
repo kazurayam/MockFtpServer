@@ -53,7 +53,7 @@ class PortCommandHandlerTest extends AbstractCommandHandlerTestCase {
         verifyNumberOfInvocations(commandHandler, 1);
         verifyTwoDataElements(commandHandler.getInvocation(0),
                 PortCommandHandler.HOST_KEY, HOST,
-                PortCommandHandler.PORT_KEY, new Integer(PORT));
+                PortCommandHandler.PORT_KEY, PORT);
     }
 
     @Test

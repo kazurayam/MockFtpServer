@@ -55,7 +55,7 @@ class EprtCommandHandlerTest extends AbstractCommandHandlerTestCase {
         verifyNumberOfInvocations(commandHandler, 1);
         verifyTwoDataElements(commandHandler.getInvocation(0),
                 PortCommandHandler.HOST_KEY, HOST_IPV4,
-                PortCommandHandler.PORT_KEY, new Integer(PORT));
+                PortCommandHandler.PORT_KEY, PORT);
     }
 
     @Test
@@ -71,7 +71,7 @@ class EprtCommandHandlerTest extends AbstractCommandHandlerTestCase {
         verifyNumberOfInvocations(commandHandler, 1);
         verifyTwoDataElements(commandHandler.getInvocation(0),
                 PortCommandHandler.HOST_KEY, HOST_IPV6,
-                PortCommandHandler.PORT_KEY, new Integer(PORT));
+                PortCommandHandler.PORT_KEY, PORT);
     }
 
     @Test

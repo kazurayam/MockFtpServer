@@ -49,10 +49,11 @@ class AlloCommandHandlerTest extends AbstractCommandHandlerTestCase {
         verify(session, times(2)).sendReply(ReplyCodes.ALLO_OK, replyTextFor(ReplyCodes.ALLO_OK));
 
         verifyNumberOfInvocations(commandHandler, 2);
-        verifyOneDataElement(commandHandler.getInvocation(0), AlloCommandHandler.NUMBER_OF_BYTES_KEY, new Integer(
-                BYTES1));
-        verifyTwoDataElements(commandHandler.getInvocation(1), AlloCommandHandler.NUMBER_OF_BYTES_KEY, new Integer(
-                BYTES2), AlloCommandHandler.RECORD_SIZE_KEY, new Integer(RECORD_SIZE));
+        verifyOneDataElement(commandHandler.getInvocation(0),
+                AlloCommandHandler.NUMBER_OF_BYTES_KEY, BYTES1);
+        verifyTwoDataElements(commandHandler.getInvocation(1),
+                AlloCommandHandler.NUMBER_OF_BYTES_KEY, BYTES2,
+                AlloCommandHandler.RECORD_SIZE_KEY, RECORD_SIZE);
     }
 
     @Test

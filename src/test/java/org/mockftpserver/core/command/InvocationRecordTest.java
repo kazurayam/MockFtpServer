@@ -37,7 +37,7 @@ class InvocationRecordTest extends AbstractTestCase {
     private static final String KEY1 = "key1";
     private static final String KEY2 = "key2";
     private static final String STRING = "abc123";
-    private static final Integer INT = new Integer(77);
+    private static final Integer INT = 77;
 
     private InvocationRecord invocationRecord;
 

@@ -63,7 +63,7 @@ public class EprtCommandHandler extends AbstractStubCommandHandler implements Co
         session.setClientDataHost(client.host);
         session.setClientDataPort(client.port);
         invocationRecord.set(HOST_KEY, client.host);
-        invocationRecord.set(PORT_KEY, new Integer(client.port));
+        invocationRecord.set(PORT_KEY, client.port);
         sendReply(session);
     }
 
