@@ -28,7 +28,7 @@ import java.util.Locale;
  */
 public class WindowsDirectoryListingFormatter implements DirectoryListingFormatter {
 
-    private static final String DATE_FORMAT = "MM-dd-yy hh:mmaa";
+    private static final String DATE_FORMAT = "MM-dd-yy hh:mm";
     private static final int SIZE_WIDTH = 15;
 
     /**
